@@ -1,0 +1,182 @@
+<html>
+ <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0,user-scalable=yes" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0; user-scalable=no" />
+        
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        
+        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <META HTTP-EQUIV="EXPIRES" CONTENT="-1">
+        <meta name="format-detection" content="telephone=no">
+
+
+   <script src="bootloader.js"></script>
+   <script src="cordova.js"></script>
+   <script src="phonegap-websocket.js"></script>
+   <script src="pushnotification.js"></script>
+   <script src="barcodescanner.js"></script>
+
+
+  <!--  <script src="cordova-2.7.0.android.js"></script>  --> 
+
+
+  <!-- GOOGLE MAPS API V3 --> 
+   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0Pe6qqdN-FxYS_xmbQOSyvrgHRY8DUUU&sensor=true">
+        </script>
+
+    <script>
+     $(document).on('ready', function() { 
+
+        _w = $(window).width(); 
+        _h = $(window).height();
+
+        $('.rootContainer').css({width:_w, height:_h, background: 'blue'});
+        $('.startScreen').css({width:_w, height:_h});
+
+
+        $('.startScreenSpinner').css({
+            position: 'absolute', 
+            top: ( _h / 2 ) - ( 37 ),
+            left : _w / 2 - 37,
+            textAlign: 'center'
+        }).css({opacity:0}).delay(1000).animate({opacity:1}, 500); 
+
+        $('.startScreenLogo').css({
+            position: 'absolute', 
+            top: ( _h / 2 ) - ( 37 ) + 1,
+            left : _w / 2 - 37 + 2,
+            textAlign: 'center', 
+
+        });
+
+        $('.startScreenLogoImg').css({opacity:0}).delay(1000).animate({opacity:1}, 500);  
+
+
+
+     }); 
+
+    </script>
+
+   <style>
+     body { margin: 0; padding:0;
+
+        background: url(img/dark_fish_skin.png) repeat;
+        font-family: roboto_reg;
+     
+       margin:0;
+       padding: 0;
+       color:black; 
+
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+    -webkit-transform: translate3D(0,0,0);
+
+    
+
+
+     }
+   	 .startScreen 
+   	  {
+   	  	  	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		
+
+
+		font-family:arial;
+
+      background: rgb(199,225,234); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNjN2UxZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYTBkOGVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(199,225,234,1) 0%, rgba(160,216,239,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(199,225,234,1)), color-stop(100%,rgba(160,216,239,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(199,225,234,1) 0%,rgba(160,216,239,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(199,225,234,1) 0%,rgba(160,216,239,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(199,225,234,1) 0%,rgba(160,216,239,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(199,225,234,1) 0%,rgba(160,216,239,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7e1ea', endColorstr='#a0d8ef',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+
+   	  }
+
+        .rootContainer { 
+
+          
+
+        }
+
+   	  .startScreenSpinner
+   	  {
+       
+
+   	  }
+
+   	   .startScreenMessage
+   	  {
+   	  	position: relative; top: 80%;
+   	  	text-align: center;
+        font-size:10pt; 
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.8);
+        font-weight: bold;
+   	  }
+
+      .startScreenLogo { 
+
+       
+
+      }
+
+        .spinner {
+            height:60px;
+            width:60px;
+            margin:0px auto;
+          
+            -webkit-animation: rotation .6s infinite linear;
+            -moz-animation: rotation .6s infinite linear;
+            -o-animation: rotation .6s infinite linear;
+            animation: rotation .6s infinite linear;
+            border-left:6px solid rgba(0,174,239,.35);
+            border-right:6px solid rgba(0,174,239,.35);
+            border-bottom:6px solid rgba(0,174,239,.35);
+            border-top:6px solid rgba(0,174,239,.8);
+            border-radius:100%;
+            }
+
+            @-webkit-keyframes rotation {
+            from {-webkit-transform: rotate(0deg);}
+            to {-webkit-transform: rotate(359deg);}
+            }
+
+            @-moz-keyframes rotation {
+            from {-moz-transform: rotate(0deg);}
+            to {-moz-transform: rotate(359deg);}
+            }
+
+            @-o-keyframes rotation {
+            from {-o-transform: rotate(0deg);}
+            to {-o-transform: rotate(359deg);}
+            }
+
+            @keyframes rotation {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(359deg);}
+            }
+   </style>
+ </head>
+ <body>
+  <div id="rootContainer">
+
+ 	<div class="startScreen">
+ 		<div class="loader startScreenSpinner spinner"></div>
+    <div class="loader startScreenLogo"> <img class="startScreenLogoImg" src="img/productLogo.png" width="70" /></div>
+ 		<div class="startScreenMessage">PLEASE WAIT</div> 		
+ 	</div>
+
+  </div>
+ </body>
+</html>
+
+
+
+
