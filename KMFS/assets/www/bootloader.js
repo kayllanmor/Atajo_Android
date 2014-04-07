@@ -52,12 +52,12 @@ var destinationType; // sets the format of returned value
 
 // List of hosts where AtajoNode instance is running
 var bootHosts = [
-	// 'http://192.168.43.23:4000',  // JACKIE LOCAL DEV
+	 'http://192.168.43.23:5001',  // JACKIE LOCAL DEV
 	// 'http://192.168.10.122:4000', //JACKIE CENTURION
-	 'http://192.168.1.151:4000',  // WERNER LOCAL
+	// 'http://192.168.1.151:4000',  // WERNER LOCAL
    // 'http://192.168.4.99:4000', 
    //  'http://196.14.91.61:4000',  // zacptdev.brandhouse.co.za 
-	'http://54.221.226.147:4000',  // FOO
+	'http://54.221.226.147:5001',  // FOO
  	
  ]
 

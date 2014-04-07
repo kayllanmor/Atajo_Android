@@ -36,6 +36,8 @@
     <content src="start.html" />
 
     <preference name="loglevel" value="DEBUG" />
+    
+    <preference name="fullscreen" value="false" />
     <!--
       <preference name="splashscreen" value="resourceName" />
       <preference name="backgroundColor" value="0xFFF" />
@@ -43,8 +45,6 @@
       <preference name="InAppBrowserStorageEnabled" value="true" />
       <preference name="disallowOverscroll" value="true" />
     -->
-        <preference name="fullscreen" value="true" />
-    
 
     <feature name="App">
       <param name="android-package" value="org.apache.cordova.App"/>
@@ -111,9 +111,6 @@
      </feature>
     <!-- Deprecated plugins element. Remove in 3.0 -->
     <plugins>
-     <plugin
-            name="Camera"
-            value="org.apache.cordova.CameraLauncher" />
          <plugin name="BarcodeScanner" value="com.phonegap.plugins.barcodescanner.BarcodeScanner"/>
          <plugin name="PushPlugin" value="com.plugin.gcm.PushPlugin" />
          <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />

@@ -52,6 +52,7 @@ public class KonicaMinolta extends DroidGap
         this.appView.getSettings().setRenderPriority(RenderPriority.HIGH);
         this.appView.getSettings().setPluginState(android.webkit.WebSettings.PluginState.ON_DEMAND);
         
+        
    /*     
         getWindow().setFlags(
         		WindowManager.LayoutParams.FLAG_FULLSCREEN,                   
