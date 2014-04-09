@@ -436,6 +436,15 @@ client = {
 //		client.socket = io.connect(client.host, {secure:true});
 		client.socket = io.connect(client.host);
 
+		client.baseReconnectIntervalID = setInterval(function(){
+			console.log("CHECKING RECONNECT "+socketClient.socket.connected+" / "+socketClient.socket.connecting); 
+		    if (socketClient.socket.connected === false &&
+		        socketClient.socket.connecting === false) {
+		        // use a connect() or reconnect() here if you want
+		        client.socket.socket.connect()
+		   }
+		}, 10000)
+
 	},
 
 
