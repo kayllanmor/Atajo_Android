@@ -57,7 +57,7 @@ var bootHosts = [
 	// 'http://192.168.1.151:4000',  // WERNER LOCAL
    // 'http://192.168.4.99:4000', 
    //  'http://196.14.91.61:4000',  // zacptdev.brandhouse.co.za 
-	'http://54.221.226.147:5001',  // FOO
+	'http://196.26.201.105:5001',  // KONICA QAS
  	
  ]
 
