@@ -1,6 +1,8 @@
 /*
 	Werner Venter - Nov 2013
 
+
+
 	Atajo Startup Script (IOS) 
 
 	- This file cannot can only be updated with a new compile / release cycle
@@ -52,12 +54,12 @@ var destinationType; // sets the format of returned value
 
 // List of hosts where AtajoNode instance is running
 var bootHosts = [
-	 'http://192.168.43.23:5001',  // JACKIE LOCAL DEV
+	// 'http://192.168.43.23:5001',  // JACKIE LOCAL DEV
 	// 'http://172.20.10.3:5001', //JACKIE CENTURION
 	// 'http://192.168.1.151:4000',  // WERNER LOCAL
    // 'http://192.168.4.99:4000', 
    //  'http://196.14.91.61:4000',  // zacptdev.brandhouse.co.za 
-	'http://54.221.226.147:5001',  // FOO
+	 'http://196.26.201.105:5001',  // KONICA QAS
  	
  ]
 
